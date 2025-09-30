@@ -2,13 +2,16 @@ package tankgame1;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 //画板
-public class MyPanel extends JPanel {
+public class MyPanel extends JPanel implements KeyListener {
     private MyTank myTank = null;
 
     public MyPanel() {
         myTank = new MyTank(100,100);
+        myTank.setSpeed(3);
     }
 
     @Override
@@ -16,7 +19,7 @@ public class MyPanel extends JPanel {
         super.paint(g);
         g.fillRect(0,0,1000,800);
         //对画出坦克的方法进行封装（防止每次画坦克都要写在方法体中）
-        paintTank(myTank.getX(), myTank.getY(), g,0,0);
+        paintTank(myTank.getX(), myTank.getY(), g, myTank.getDirect(),0);
     }
 
     /**
@@ -45,9 +48,59 @@ public class MyPanel extends JPanel {
                 g.fillOval(x+10,y+20,20,20);//驾驶舱
                 g.drawLine(x+20,y+30,x+20,y);//炮筒
                 break;
+            case 1://朝右
+                g.fill3DRect(x,y,60,10,false);//左轮
+                g.fill3DRect(x,y+30,60,10,false);//右轮
+                g.fill3DRect(x+10,y+10,40,20,false);//机体
+                g.fillOval(x+20,y+10,20,20);//驾驶舱
+                g.drawLine(x+30,y+20,x+60,y+20);//炮筒
+                break;
+            case 2://朝下
+                g.fill3DRect(x,y,10,60,false);//左轮
+                g.fill3DRect(x+30,y,10,60,false);//右轮
+                g.fill3DRect(x+10,y+10,20,40,false);//机体
+                g.fillOval(x+10,y+20,20,20);//驾驶舱
+                g.drawLine(x+20,y+30,x+20,y+60);//炮筒
+                break;
+            case 3://朝左
+                g.fill3DRect(x,y,60,10,false);//左轮
+                g.fill3DRect(x,y+30,60,10,false);//右轮
+                g.fill3DRect(x+10,y+10,40,20,false);//机体
+                g.fillOval(x+20,y+10,20,20);//驾驶舱
+                g.drawLine(x+30,y+20,x,y+20);//炮筒
+                break;
             default:
                 System.out.println("NULL SOLUTION");
         }
+
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if(e.getKeyCode() == KeyEvent.VK_W){
+            myTank.setDirect(0);
+            myTank.MoveUp();
+        }else if(e.getKeyCode() == KeyEvent.VK_D){
+            myTank.setDirect(1);
+            myTank.MoveRight();
+        }else if(e.getKeyCode() == KeyEvent.VK_S){
+            myTank.setDirect(2);
+            myTank.MoveDown();
+        } else if (e.getKeyCode() == KeyEvent.VK_A) {
+            myTank.setDirect(3);
+            myTank.MoveLeft();
+        }
+
+        this.repaint();
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
 
     }
 }

@@ -13,6 +13,7 @@ public class TankGame extends JFrame {
         this.setVisible(true);
         this.setBackground(Color.red);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.addKeyListener(mp);
     }
 
     public static void main(String[] args) {
