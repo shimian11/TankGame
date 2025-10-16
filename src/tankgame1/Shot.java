@@ -4,7 +4,7 @@ public class Shot implements Runnable{
     int x;
     int y;
     int direct;
-    int speed = 2;
+    int speed = 5;
     boolean live = true;
 
     public Shot(int x, int y, int direct) {
@@ -37,11 +37,10 @@ public class Shot implements Runnable{
                     x -= speed;
                     break;
             }
-            System.out.println("x="+x+",y="+y);
-            //判断是否到达边界
-            if(!(x>=0 && x<=1000 && y>=0 && y<=800)){
+            //1、判断是否到达边界
+            //2、判断是否击中敌人（即判断live状态有没有改变）
+            if(!(x>=0 && x<=1000 && y>=0 && y<=800 && live)){
                 live = false;//结束线程，让射击死亡
-                System.out.println(Thread.currentThread().getName()+"子弹死亡");
             }
         }
     }

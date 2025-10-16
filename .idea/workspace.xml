@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31e55300-1698-4fc3-848d-e1761dc0ad49" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/event_/MoveBoll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/111.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tankgame1/AePlayWave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tankgame1/Bomb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tankgame1/EnemyTank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tankgame1/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tankgame1/Recorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tankgame1/Shot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tankgame1/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tankgame1/MyPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tankgame1/MyTank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tankgame1/MyTank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tankgame1/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tankgame1/Tank.java" afterDir="false" />
@@ -39,15 +45,16 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Graphics",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Java/JAVA练手项目/TankGame/out/production/TankGame",
+    "last_opened_file_path": "E:/Java/JAVA练手项目/TankGame/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true",
     "应用程序.MoveBoll.executor": "Run",
     "应用程序.TankGame.executor": "Run",
@@ -57,6 +64,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java\JAVA练手项目\TankGame\src" />
+      <recent name="E:\Java\JAVA练手项目\TankGame\src\tankgame1" />
+      <recent name="E:\Java\JAVA练手项目\TankGame\out\production\TankGame" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Java\JAVA练手项目\TankGame\out\production\TankGame" />
     </key>
   </component>
@@ -77,6 +89,21 @@
       <updated>1759143722835</updated>
       <workItem from="1759143724153" duration="8562000" />
       <workItem from="1759213607246" duration="1996000" />
+      <workItem from="1759233342161" duration="112000" />
+      <workItem from="1759474602774" duration="1736000" />
+      <workItem from="1759563793051" duration="2758000" />
+      <workItem from="1760007768226" duration="7881000" />
+      <workItem from="1760062985558" duration="3394000" />
+      <workItem from="1760085802416" duration="11470000" />
+      <workItem from="1760104622394" duration="1836000" />
+      <workItem from="1760108587869" duration="121000" />
+      <workItem from="1760151225117" duration="702000" />
+      <workItem from="1760169878413" duration="2167000" />
+      <workItem from="1760440714680" duration="8172000" />
+      <workItem from="1760497616184" duration="506000" />
+      <workItem from="1760526099429" duration="6841000" />
+      <workItem from="1760580711036" duration="19000" />
+      <workItem from="1760611417496" duration="3939000" />
     </task>
     <servers />
   </component>
